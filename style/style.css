@@ -385,14 +385,14 @@ header>.grey-line {
 .main-text__image-cps {
     background-image: url("../image/cps.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
-    width: 320px;
-    height: 230px;
-    align-self: center;
+    background-size: 100% 100%;
+    width:100vw;
+    height: 57vw;
 }
 
 @media(min-width:768px) {
     .main-text__image-cps {   
+        background-size: contain;
         width:360px;
         height: 260px;
         flex-shrink: 0;
