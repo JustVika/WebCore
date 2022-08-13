@@ -1,0 +1,226 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+  
+}
+
+@font-face {
+    font-family: "TTLakes";
+    font-style: normal;
+    font-weight: 700;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("TTLakes"),
+        /* Если не получилось, загрузит woff2 */
+        url("../fonts/TTLakes-Bold.ttf") format("ttf"),
+        /* Если браузер не поддерживает woff2, загрузит woff */
+        url("../fonts/TTLakes-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "TTLakes";
+    font-style: normal;
+    font-weight: 500;
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("TTLakes"),
+        /* Если не получилось, загрузит woff2 */
+        url("../fonts/TTLakes-Medium.ttf") format("ttf"),
+        /* Если браузер не поддерживает woff2, загрузит woff */
+        url("../fonts/TTLakes-Medium.woff") format("woff");
+}
+
+
+
+.aside-panel {
+    padding: 0 24px;
+    width: 320px;
+    font-family: "TTLakes";
+    font-weight: 500;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+    
+
+}
+
+.aside-panel__header {
+    display: flex;
+    align-items: center;
+    padding: 18px 0;
+    justify-content: space-between;
+}
+
+.burger {
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FF3E79;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+@media(min-width:1120px) {
+    .burger:hover{
+        box-shadow: 0px 0px 11px 0px rgba(255, 62, 121, 0.6);
+        transform: scale(1.1);
+    }
+}
+
+.burger::before,
+.burger::after {
+    display: block;
+    height: 2.02px;
+    background-color: #fff;
+}
+
+.burger::before {
+    content: "";
+    width: 21.73px;
+    transform: translate(9px, 1px) rotate(45deg);
+
+}
+
+.burger::after {
+    content: "";
+    width: 21.73px;
+    transform: translate(9px, -1px) rotate(-45deg);
+}
+
+.aside-panel__logo {
+    margin: 0 0 0 16.73px;
+    cursor: pointer;
+}
+
+.aside-panel__icons {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.icons__button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #FF3E79;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s ease;
+}
+@media(min-width:1120px) {
+    .icons__button:hover{
+        box-shadow: 0px 0px 11px 0px rgba(255, 62, 121, 0.6);
+        transform: scale(1.1);
+    }
+}
+
+
+.icons__button+.icons__button {
+    margin-left: 16px;
+}
+
+.icons__button--img--search {
+    background-image: url(/image/icon/search.svg);
+}
+
+.icons__button--img--call {
+    background-image: url(/image/icon/call.svg);
+}
+
+.icons__button--img--chat {
+    background-image: url(/image/icon/chat.svg);
+}
+
+.icons__button--img--profile {
+    background-image: url(/image/icon/profile.svg);
+}
+
+.aside-panel__menu {
+    margin-bottom: 250px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+
+.menu__item {
+    margin-bottom: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.menu__item::before {
+    content: "";
+    display: inline-block;
+    transform: translate(-30px, 25%);
+    left: -4px;
+    width: 4px;
+    height: 32px;
+    background: #41F6D7;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transition: 0.3s ease;
+}
+
+@media(min-width:1120px) {
+    .menu__item:hover::before{
+        transform: translate(-24px, 25%);
+    }
+}
+
+@media(min-width:1120px) {
+    .menu__item:hover {
+        color: #7E7E82;
+    }
+    
+}
+
+.aside-panel__mail {
+    display: block;
+    margin: 16px 0 12px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+}
+
+.aside-panel__phone {
+    display: block;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+    color: #1B1C21;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.aside-panel__languages{
+    padding-bottom: 32px;
+}
+.languages__btn{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1B1C21;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.aside-panel__lang--active{
+    color: #7E7E82;
+}
