@@ -128,19 +128,19 @@ body {
 }
 
 .icons__button--img--search {
-    background-image: url(/image/icon/search.svg);
+    background-image: url(../image/icon/search.svg);
 }
 
 .icons__button--img--call {
-    background-image: url(/image/icon/call.svg);
+    background-image: url(../image/icon/call.svg);
 }
 
 .icons__button--img--chat {
-    background-image: url(/image/icon/chat.svg);
+    background-image: url(../image/icon/chat.svg);
 }
 
 .icons__button--img--profile {
-    background-image: url(/image/icon/profile.svg);
+    background-image: url(../image/icon/profile.svg);
 }
 
 .aside-panel__menu {
